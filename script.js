@@ -1,4 +1,4 @@
-var figure=[]
+var figure=[], dostupnapolja=[], kontejner, polja=[], imenapolja=[];
 class figura{
     constructor(boja, ime, x, y, e){
         this.boja= boja;
@@ -8,6 +8,17 @@ class figura{
         this.e=e;
     }
 }
+class polje{
+    constructor(id, element){
+        this.id=id;
+        this.element=element
+    }
+}
+imenapolja=["jedan","dva","tri","cetiri","pet","sest","sedam","osam","devet","deset","jedanaest","dvanaest","trinaest","cetrnaest","petnaest","sesnaest","sedamnaest", "osamnaest", "devetnaest","dvadeset","dvadesetjedan","dvadesetdva","dvadesetri","dvadesetcetiri","dvadesetpet","dvadesetsest","dvadesetsedam","dvadesetosam","dvadesetdevet","trideset","tridesetjedan","tridesetdva","tridesettri","tridesetcetiri","tridesetpet","tridesetsest","tridesetsedam","tridesetosam","tridesetdevet","cetrdeset","cetrdesetjedan","cetrdesetdva","cetrdesettri","cetrdesetcetiri","cetrdesetpet","cetrdesetsest","cetrdesetsedam","cetrdesetosam","cetrdesetdevet","pedeset", "pedesetjedan","pedesetdva","pedesettri","pedesetcetiri","pedesetpet","pedesetsest","pedesetsedam", "pedesetosam", "pedesetdevet", "sesdeset", "sezdesetjedan", "sezdesetdva","sezdesettri","sezdesetcetiri"];
+for (i=0; i<imenapolja.length; i++){
+
+}
+kontejner=document.getElementById("kontejner");
 //crne-figure
 CrniTopLevo= new figura("crna", "top", 0, 0, document.querySelector("#topcrnilevi"));
 CrniKonjlevo= new figura("crna", "konj", 1, 0,  document.querySelector("#konjcrnilevi"));
@@ -49,9 +60,37 @@ figure=[CrniTopLevo,CrniKonjlevo, CrniLovacLevo, CrnaKraljica, CrniKralj,
     beliPesak6, beliPesak7, beliTopLevo, beliKonjlevo, beliLovacLevo, belaKraljica, 
     beliKralj, beliLovacDesno, beliKonjDesno, beliTopDesno];
 for (i=0; i<figure.length; i++){
-    console.log(i)
     figure[i].e.addEventListener("click", select);
 }
+var odaberaniElement=0;
 function select(){
-    this.classlist.togle("")
+    e=this;
+    if(odaberaniElement==0){
+        e.classList.toggle("selected");
+        odaberaniElement=e;
+        prikazidostupnapolja(e);
+    }
+    else if(odaberaniElement==e){
+        e.classList.toggle("selected");
+        odaberaniElement=0;
+        odabranaFigura=0;
+    }
+    else{
+        odaberaniElement.classList.toggle("selected");
+        e.classList.toggle("selected");
+        odaberaniElement=e;
+        prikazidostupnapolja(e);
+    }
+}
+function prikazidostupnapolja(element){
+    var odabranaFigura = nadjiFiguru(element, figure);
+    var roditelj= element.parentElement;
+    console.log(document.getElementById("jedan").style.gridRowStart)
+}
+function nadjiFiguru(element, niz){
+    for (var i=0; i < niz.length; i++) {
+        if (niz[i].e === element) {
+            return niz[i];
+        }
+    }
 }

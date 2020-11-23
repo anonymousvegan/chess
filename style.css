@@ -42,10 +42,262 @@ body{
     justify-content: center;
     align-items: center;
 }
-#nine{
+.selected{
+    background-color: rgba(64, 240, 58, 0.4);
+}
+#jedan{
+    grid-row: 1;
+    grid-column: 1;
+}
+#cetr{
+    grid-row: 1;
+    grid-column: 2;
+}
+#tri{
+    grid-row: 1;
+    grid-column: 3;
+}
+#cetiri{
+    grid-row: 1;
+    grid-column: 4;
+}
+#pet{
+    grid-row: 1;
+    grid-column: 5;
+}
+#sest{
+    grid-row: 1;
+    grid-column: 6;
+}
+#sedam{
+    grid-row: 1;
+    grid-column: 7;
+}
+#osam{
+    grid-row: 1;
+    grid-column: 8;
+}
+#devet{
     grid-row: 2;
     grid-column: 1;
 }
-.selected{
-    background-color: lightblue;
+#deset{
+    grid-row: 2;
+    grid-column: 2;
+}
+#jedanaest{
+    grid-row: 2;
+    grid-column: 3;
+}
+#dvanaest{
+    grid-row: 2;
+    grid-column: 4;
+}
+#trinaest{
+    grid-row: 2;
+    grid-column: 5;
+}
+#cetrnaest{
+    grid-row: 2;
+    grid-column: 6;
+}
+#petnaest{
+    grid-row: 2;
+    grid-column: 7;
+}
+#sesnaest{
+    grid-row: 2;
+    grid-column: 8;
+}
+#sedamnaest{
+    grid-row: 3;
+    grid-column: 1;
+}
+#osamnaest{
+    grid-row: 3;
+    grid-column: 2;
+}
+#devetnaest{
+    grid-row: 3;
+    grid-column: 3;
+}
+#dvadeset{
+    grid-row: 3;
+    grid-column: 4;
+}
+#dvadesetjedan{
+    grid-row: 3;
+    grid-column: 5;
+}
+#dvadesetdva{
+    grid-row: 3;
+    grid-column:6;
+}
+#dvadesettri{
+    grid-row: 3;
+    grid-column: 7;
+}
+#dvadesetcetiri{
+    grid-row: 3;
+    grid-column: 8;
+}
+#dvadesetpet{
+    grid-row: 4;
+    grid-column: 1;
+}
+#dvadesetsest{
+    grid-row: 4;
+    grid-column: 2;
+}
+#dvadesetsedam{
+    grid-row: 4;
+    grid-column: 3;
+}
+#dvadesetosam{
+    grid-row: 4;
+    grid-column: 4;
+}
+#dvadesetdevet{
+    grid-row: 4;
+    grid-column: 5;
+}
+#trideset{
+    grid-row: 4;
+    grid-column: 6;
+}
+#tridesetjedan{
+    grid-row: 4;
+    grid-column: 7;
+}
+#tridesetdva{
+    grid-row: 4;
+    grid-column: 8;
+}
+#tridesettri{
+    grid-row: 5;
+    grid-column: 1;
+}
+#tridesetcetiri{
+    grid-row: 5;
+    grid-column: 2;
+}
+#tridesetpet{
+    grid-row: 5;
+    grid-column: 3;
+}
+#tridesetsest{
+    grid-row: 5;
+    grid-column: 4;
+}
+#tridesetsedam{
+    grid-row: 5;
+    grid-column: 5;
+}
+#tridesetosam{
+    grid-row: 5;
+    grid-column: 6;
+}
+#tridesetdevet{
+    grid-row: 5;
+    grid-column: 7;
+}
+#cetrdeset{
+    grid-row: 5;
+    grid-column: 8;
+}
+#cetrdesetjedan{
+    grid-row: 6;
+    grid-column: 1;
+}
+#cetrdesetdva{
+    grid-row: 6;
+    grid-column: 2;
+}
+#cetrdesettri{
+    grid-row: 6;
+    grid-column: 3;
+}
+#cetrdesetcetiri{
+    grid-row: 6;
+    grid-column: 4;
+}
+#cetrdesetpet{
+    grid-row: 6;
+    grid-column: 5;
+}
+#cetrdesetsest{
+    grid-row: 6;
+    grid-column: 6;
+}
+#cetrdesetsedam{
+    grid-row: 6;
+    grid-column: 7;
+}
+#cetrdesetosam{
+    grid-row: 6;
+    grid-column: 8;
+}
+#cetrdesetdevet{
+    grid-row: 7;
+    grid-column: 1;
+}
+#pedeset{
+    grid-row: 7;
+    grid-column: 2;
+}
+#pedesetjedan{
+    grid-row: 7;
+    grid-column: 3;
+}
+#pedesetdva{
+    grid-row: 7;
+    grid-column: 4;
+}
+#pedesettri{
+    grid-row: 7;
+    grid-column: 5;
+}
+#pedesetcetiri{
+    grid-row: 7;
+    grid-column: 6;
+}
+#pedesetpet{
+    grid-row: 7;
+    grid-column: 7;
+}
+#pedesetsest{
+    grid-row: 7;
+    grid-column: 8;
+}
+#pedesetsedam{
+    grid-row: 8;
+    grid-column: 1;
+}
+#pedesetosam{
+    grid-row: 8;
+    grid-column: 2;
+}
+#pedesetdevet{
+    grid-row: 8;
+    grid-column: 3;
+}
+#sezdeset{
+    grid-row: 8;
+    grid-column: 4;
+}
+#sezdesetjedan{
+    grid-row: 8;
+    grid-column: 5;
+}
+#sezdesetdva{
+    grid-row: 8;
+    grid-column: 6;
+}
+#sezdesettri{
+    grid-row: 8;
+    grid-column: 7;
+}
+#sezdesetcetiri{
+    grid-row: 8;
+    grid-column: 8;
 }
